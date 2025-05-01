@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Info</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+          margin: 0;
+          font-family: 'Segoe UI', sans-serif;
+          background-color: #f4f4f4;
+        }
+
+        .topbar {
+          background-color: #2c3e50;
+          color: white;
+          padding: 15px 20px;
+          display: flex;
+          align-items: center;
+        }
+
+        .menu-btn {
+          font-size: 26px;
+          cursor: pointer;
+          margin-right: 15px;
+        }
+
+        .title {
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+        .sidebar {
+          position: fixed;
+          top: 0;
+          left: -270px;
+          width: 250px;
+          height: 100%;
+          background-color: #34495e;
+          color: white;
+          padding: 20px;
+          transition: left 0.3s ease;
+          z-index: 1000;
+        }
+
+        .sidebar.active {
+          left: 0;
+        }
+
+        .sidebar h2 {
+          font-size: 22px;
+          margin-bottom: 20px;
+          border-bottom: 2px solid #1abc9c;
+          padding-bottom: 10px;
+        }
+
+        .sidebar ul {
+          list-style: none;
+          padding: 0;
+        }
+
+        .sidebar ul li {
+          padding: 12px 0;
+          border-bottom: 1px solid #7f8c8d;
+        }
+
+        .sidebar a {
+          color: #1abc9c;
+          text-decoration: none;
+        }
+
+        .content {
+          padding: 30px 20px;
+        }
+
+        .content h1 {
+          margin-top: 10px;
+          color: #2c3e50;
+        }
+
+        .content p {
+          font-size: 16px;
+          color: #555;
+        }
+
+        .contact-info ul {
+          list-style: none;
+          padding: 0;
+        }
+
+        .contact-info li {
+          margin-bottom: 15px;
+        }
+
+        .contact-info strong {
+          color: #2c3e50;
+        }
+
+        .contact-info a {
+          color: #0077cc;
+          text-decoration: none;
+        }
+
+        .contact-info a:hover {
+          text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="topbar">
+    <span class="menu-btn" onclick="toggleSidebar()">☰</span>
+    <div class="title">My Info</div>
+</div>
+
+<!-- Sidebar Menu -->
+<div class="sidebar" id="sidebar">
+    <h2>MENU</h2>
+    <ul>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Update</a></li>
+        <li><a href="#">OTHERS</a></li><br>
+        <a href="info.html">&#8594</a>
+    </ul>
+</div>
+
+<!-- Main Content -->
+<div class="content">
+    <h1>Welcome to Sharew Game Info</h1>
+    <p>This APK is a game application developed by <strong>Sharew Endeshaw</strong>.</p>
+
+    <div class="contact-info">
+        <ul>
+            <li><strong>Email:</strong> <br><a href="mailto:sharewendeshw8@gmail.com">sharewendeshw8@gmail.com</a></li>
+            <li><strong>Phone:</strong> <br><a href="tel:+251920773334">+251 920 773 334</a></li>
+            <li><strong>Telegram:</strong> <br><a href="https://t.me/sharew32" target="_blank">@sharew32</a></li>
+            <li><strong>YouTube:</strong> <br><a href="https://youtube.com/@sharew32" target="_blank">@sharew32</a></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("active");
+    }
+</script>
+
+</body>
+</html>

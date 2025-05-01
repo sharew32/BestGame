@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Sharew Game</title>
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: 'Segoe UI', sans-serif;
+          background: linear-gradient(to right, #00c6ff, #0072ff);
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          position: relative;
+        }
+
+        .menu-link {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          font-size: 26px;
+          color: white;
+          text-decoration: none;
+          background: rgba(255,255,255,0.1);
+          padding: 5px 10px;
+          border-radius: 10px;
+          font-weight: bold;
+        }
+
+        .menu-link:hover {
+          background: rgba(255,255,255,0.3);
+        }
+
+        .container {
+          text-align: center;
+        }
+
+        h1 {
+          font-size: 36px;
+          margin-bottom: 20px;
+        }
+
+        p {
+          font-size: 18px;
+          margin-bottom: 40px;
+        }
+
+        .start-button {
+          background-color: white;
+          color: #0072ff;
+          padding: 15px 30px;
+          border: none;
+          border-radius: 25px;
+          font-size: 18px;
+          font-weight: bold;
+          cursor: pointer;
+          transition: background 0.3s ease;
+        }
+
+        .start-button:hover {
+          background-color: #f1f1f1;
+        }
+
+        .footer {
+          position: absolute;
+          bottom: 15px;
+          width: 100%;
+          text-align: center;
+          font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ☰ Info Link -->
+<a class="menu-link" href="info.html">☰</a>
+
+<div class="container">
+    <h1>🎮 WELCOME TO SHAREW GAME!!!</h1>
+    <p>Get ready to play and have fun!</p>
+    <button class="start-button" onclick="startGame()">Start Game</button>
+</div>
+
+<script>
+    function startGame() {
+      window.location.href = "Game.html";
+    }
+</script>
+</body>
+</html>
